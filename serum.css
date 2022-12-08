@@ -177,7 +177,6 @@ body {
     top: 80px;
     right: 0px;
     position: fixed;
-    z-index: 500;
     display: none;
   }
   .chosenItem {
@@ -185,9 +184,13 @@ body {
     flex-wrap: wrap;
   }
 
-  #chosenItem {
-    width: 60px;
-    height: 90px;
+  .chosenItemImage {
+    width: 70px;
+    height: 100px;
+    overflow: hidden;
+    /*the following 2 lines was inspired from https://www.w3schools.com/css/css3_object-fit.asp to make the img proportional*/
+    object-fit: cover;
+    object-position: 25% 80%;
     margin-left: 33px;
     margin-top: 26px;
   }
@@ -388,6 +391,7 @@ body {
   .contentSerumPage {
     overflow-y: scroll;
     margin-right: 0px;
+    overflow-x: hidden;
   }
   .content1 /*top big image*/ {
     width: 80vw;
@@ -400,6 +404,7 @@ body {
     height: 500px;
     object-fit: cover;
     object-position: 100% 25%;
+    overflow: hidden;
   }
   #serumText {
     position: absolute;
@@ -483,13 +488,17 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-
-  #chosenItem {
+  .chosenItemImage {
     width: 60px;
     height: 90px;
+    overflow: hidden;
+    /*the following 2 lines was inspired from https://www.w3schools.com/css/css3_object-fit.asp to make the img proportional*/
+    object-fit: cover;
+    object-position: 25% 80%;
     margin-left: 33px;
     margin-top: 26px;
   }
+
   .chosenItemText {
     padding-top: 26px;
     padding-left: 15px;

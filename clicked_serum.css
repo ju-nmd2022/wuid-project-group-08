@@ -209,7 +209,6 @@ body {
     top: 80px;
     right: 0px;
     position: fixed;
-    z-index: 500;
     display: none;
   }
   .chosenItem {
@@ -217,9 +216,13 @@ body {
     flex-wrap: wrap;
   }
 
-  #chosenItem {
-    width: 60px;
-    height: 90px;
+  .chosenItemImage {
+    width: 70px;
+    height: 100px;
+    overflow: hidden;
+    /*the following 2 lines was inspired from https://www.w3schools.com/css/css3_object-fit.asp to make the img proportional*/
+    object-fit: cover;
+    object-position: 25% 80%;
     margin-left: 33px;
     margin-top: 26px;
   }
@@ -506,6 +509,8 @@ body {
     height: 42px;
 
     background-color: #b8cabe;
+    position: relative;
+    top: 7px;
   }
   #minusbig {
     width: 39px;
@@ -528,19 +533,22 @@ body {
     right: 0px;
     position: fixed;
     display: none;
-    z-index: 500;
   }
   .chosenItem {
     display: flex;
     flex-wrap: wrap;
   }
-
-  #chosenItem {
+  .chosenItemImage {
     width: 60px;
     height: 90px;
+    overflow: hidden;
+    /*the following 2 lines was inspired from https://www.w3schools.com/css/css3_object-fit.asp to make the img proportional*/
+    object-fit: cover;
+    object-position: 25% 80%;
     margin-left: 33px;
     margin-top: 26px;
   }
+
   .chosenItemText {
     padding-top: 26px;
     padding-left: 15px;
