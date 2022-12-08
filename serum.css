@@ -2,6 +2,10 @@ html,
 body {
   margin: 0px;
 }
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media screen and (max-width: 391px) /*iphone 12 pro*/ {
   header {
     display: flex;

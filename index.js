@@ -43,12 +43,12 @@ window.addEventListener("load", function () {
   checkout.addEventListener("click", function () {
     window.location.assign("checkout.html");
   });
-
+  if (addedToCart) {
+    addedToCart.addEventListener("click", function () {
+      addedToCart.innerText = "Added to Shopping Cart";
+    });
+  }
   chosenSerum.addEventListener("click", function () {
     window.location.assign("clicked_serum.html");
-  });
-
-  addedToCart.addEventListener("click", function () {
-    addedToCart.innerText = "Added to Shopping Cart";
   });
 });

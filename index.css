@@ -2,6 +2,7 @@ html,
 body {
   margin: 0px;
 }
+
 @media screen and (max-width: 391px) /*iphone 12 pro*/ {
   header {
     display: flex;
@@ -499,6 +500,7 @@ body {
     background-color: #cadbcf;
     margin-left: 20vw;
     width: 80vw;
+    color: white;
   }
   .seasonalItem1 {
     width: 40vw;
