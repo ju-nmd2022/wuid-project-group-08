@@ -83,9 +83,7 @@ body {
   }
 
   /*LAYOUT SERUM PAGE*/
-  .contentTonerPage {
-    overflow-y: scroll;
-  }
+
   .content1 /*top big image*/ {
     width: 100vw;
     height: 328px;
@@ -381,7 +379,6 @@ body {
 
   /*content toner page*/
   .contentTonerPage {
-    overflow-y: scroll;
     margin-right: 0px;
     overflow-x: hidden;
   }

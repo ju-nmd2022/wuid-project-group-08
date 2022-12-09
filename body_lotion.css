@@ -379,7 +379,6 @@ body {
 
   /*content bodylotion page*/
   .contentBlPage {
-    overflow-y: scroll;
     margin-right: 0px;
     overflow-x: hidden;
   }

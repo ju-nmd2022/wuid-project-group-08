@@ -2,9 +2,6 @@ html,
 body {
   margin: 0px;
 }
-* {
-  font-family: "Times New Roman", Times, serif;
-}
 
 @media screen and (max-width: 391px) /*iphone 12 pro*/ {
   header {
@@ -87,9 +84,7 @@ body {
   }
 
   /*LAYOUT SERUM PAGE*/
-  .contentSerumPage {
-    overflow-y: scroll;
-  }
+
   .content1 /*top big image*/ {
     width: 100vw;
     height: 328px;
@@ -393,7 +388,6 @@ body {
 
   /*content serum page*/
   .contentSerumPage {
-    overflow-y: scroll;
     margin-right: 0px;
     overflow-x: hidden;
   }
