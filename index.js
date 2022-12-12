@@ -14,17 +14,17 @@ window.addEventListener("load", function () {
  will make the menu appear */
   /**why do i have to press 2 times? */
   hamburgerMenuIcon.addEventListener("click", function () {
-    if (menu.style.display == "none") {
-      menu.style.display = "block";
-    } else {
+    if (menu.style.display == "block") {
       menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
     }
   });
   shoppingBagIcon.addEventListener("click", function () {
-    if (shoppingBag.style.display == "none") {
-      shoppingBag.style.display = "block";
-    } else {
+    if (shoppingBag.style.display == "block") {
       shoppingBag.style.display = "none";
+    } else {
+      shoppingBag.style.display = "block";
     }
   });
 
