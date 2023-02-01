@@ -36,6 +36,25 @@ body {
     align-self: center;
     margin-left: 10px;
   }
+  #hamburgerMenuIcon:active {
+    animation-name: clickMenu;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes clickMenu {
+    0% {
+      opacity: 0;
+      background-color: #d8e8dd;
+    }
+    50% {
+      background-color: #6c8875;
+    }
+    100% {
+      opacity: 98%;
+      background-color: #d8e8dd;
+    }
+  }
   #profileIcon {
     width: 25px;
   }
@@ -46,6 +65,23 @@ body {
     width: 25px;
 
     margin-right: 10px;
+  }
+  #shoppingBagIcon:active {
+    animation-name: hoverBag;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hoverBag {
+    0% {
+      background-color: #d8e8dd;
+    }
+    50% {
+      background-color: #6c8875;
+    }
+    100% {
+      background-color: #d8e8dd;
+    }
   }
 
   /*MENU*/
@@ -104,6 +140,10 @@ body {
     z-index: 100;
     margin: 0px;
     color: #7aad8c;
+  }
+  .back:active {
+    height: 70px;
+    text-shadow: 15px 10px 15px #6c8875;
   }
   a {
     text-decoration: none;
@@ -346,6 +386,21 @@ body {
     width: 35px;
     margin-right: 20px;
   }
+  #shoppingBagIcon:hover {
+    animation-name: hoverBag;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hoverBag {
+    0% {
+      background-color: #d8e8dd;
+    }
+
+    100% {
+      background-color: #6c8875;
+    }
+  }
 
   /*MENU*/
   .menu {
@@ -430,6 +485,10 @@ body {
     z-index: 100;
     margin-left: 20vw;
   }
+  .back:hover {
+    height: 70px;
+    text-shadow: 10px 0px 10px #6c8875;
+  }
   a {
     text-decoration: none;
   }
@@ -460,6 +519,9 @@ body {
   #serum1 {
     width: 173px;
     height: 334px;
+  }
+  #serum1:hover {
+    box-shadow: 0px 0px 10px 3px #d8e8dd;
   }
 
   #serum2 {

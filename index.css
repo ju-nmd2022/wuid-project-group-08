@@ -36,6 +36,25 @@ body {
     align-self: center;
     margin-left: 10px;
   }
+  #hamburgerMenuIcon:active {
+    animation-name: clickMenu;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes clickMenu {
+    0% {
+      opacity: 0;
+      background-color: #d8e8dd;
+    }
+    50% {
+      background-color: #6c8875;
+    }
+    100% {
+      opacity: 98%;
+      background-color: #d8e8dd;
+    }
+  }
   #profileIcon {
     width: 25px;
   }
@@ -46,6 +65,23 @@ body {
     width: 25px;
 
     margin-right: 10px;
+  }
+  #shoppingBagIcon:active {
+    animation-name: hoverBag;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hoverBag {
+    0% {
+      background-color: #d8e8dd;
+    }
+    50% {
+      background-color: #6c8875;
+    }
+    100% {
+      background-color: #d8e8dd;
+    }
   }
 
   /*MENU*/
@@ -140,6 +176,9 @@ body {
     object-position: 50% 50%;
     background-color: white;
   }
+  .itemsImages:active {
+    box-shadow: 10px 10px 15px #6c8875;
+  }
   #item1 {
     width: 100px;
     height: 128px;
@@ -186,6 +225,9 @@ body {
     width: 86px;
     height: 25px;
     margin: auto;
+  }
+  .readMoreButton:active {
+    box-shadow: 0px 0px 10px 3px #6c8875 inset;
   }
   h10 {
     font-size: 13px;
@@ -376,6 +418,21 @@ body {
     width: 35px;
     margin-right: 20px;
   }
+  #shoppingBagIcon:hover {
+    animation-name: hoverBag;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hoverBag {
+    0% {
+      background-color: #d8e8dd;
+    }
+
+    100% {
+      background-color: #6c8875;
+    }
+  }
 
   /*MENU*/
   .menu {
@@ -481,6 +538,9 @@ body {
     object-position: 50% 50%;
     background-color: white;
   }
+  .itemsImages:hover {
+    box-shadow: 10px 10px 15px #6c8875;
+  }
   #item1 {
     width: 180px;
     height: 233px;
@@ -522,6 +582,9 @@ body {
     width: 232px;
     height: 65px;
     margin: auto;
+  }
+  .readMoreButton:hover {
+    box-shadow: 0px 0px 10px 3px #6c8875 inset;
   }
   h10 {
     font-size: 32px;
